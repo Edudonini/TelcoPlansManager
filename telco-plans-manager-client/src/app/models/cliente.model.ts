@@ -1,12 +1,14 @@
 export interface Cliente {
   id: number;
   nome: string;
-  cpf: string;
   email: string;
   telefone: string;
-  endereco: string;
+  cpf: string;
   dataNascimento: Date;
-  isAtivo: boolean;
-  createdAt: Date;
-  updatedAt: Date;
+  cep: string;
+  endereco: string;
+  cidade: string;
+  estado: string;
+  dataCriacao: Date;
+  dataAtualizacao: Date;
 } 

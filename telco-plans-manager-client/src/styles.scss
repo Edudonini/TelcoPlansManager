@@ -1,1 +1,37 @@
 /* You can add global styles to this file, and also import other style files */
+
+// Estilos globais
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+body {
+  background-color: #f5f5f5;
+}
+
+// Correções para o Material Design
+.mat-mdc-table {
+  width: 100%;
+  background: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.mat-mdc-header-cell {
+  background-color: #f5f5f5;
+  color: #333;
+  font-weight: 500;
+  padding: 12px 16px;
+}
+
+.mat-mdc-cell {
+  padding: 12px 16px;
+  color: #666;
+}
+
+.mat-mdc-row:hover {
+  background-color: #f8f9fa;
+}

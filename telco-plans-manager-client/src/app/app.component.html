@@ -1,14 +1,20 @@
-<div class="app-container">
-  <header>
-    <h1>Telco Plans Manager</h1>
-    <nav>
-      <a routerLink="/clientes" routerLinkActive="active">Clientes</a>
-      <a routerLink="/planos" routerLinkActive="active">Planos</a>
-      <a routerLink="/assinaturas" routerLinkActive="active">Assinaturas</a>
-    </nav>
-  </header>
+<mat-toolbar color="primary">
+  <span>{{title}}</span>
+  <span class="spacer"></span>
+  <button mat-button routerLink="/clientes" routerLinkActive="active">
+    <mat-icon>people</mat-icon>
+    Clientes
+  </button>
+  <button mat-button routerLink="/planos" routerLinkActive="active">
+    <mat-icon>list_alt</mat-icon>
+    Planos
+  </button>
+  <button mat-button routerLink="/assinaturas" routerLinkActive="active">
+    <mat-icon>assignment</mat-icon>
+    Assinaturas
+  </button>
+</mat-toolbar>
 
-  <main>
-    <router-outlet></router-outlet>
-  </main>
+<div class="content">
+  <router-outlet></router-outlet>
 </div>
