@@ -1,0 +1,9 @@
+<div class="clientes-list">
+  <h2>Lista de Clientes</h2>
+  
+  <ul>
+    <li *ngFor="let cliente of clientes">
+      {{ cliente.nome }} - {{ cliente.email }}
+    </li>
+  </ul>
+</div> 
